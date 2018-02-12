@@ -1,0 +1,395 @@
+/**=================================================**/
+/*  Author   :   Rakib Hossain                       */
+/*  Email    :   serakib@gmail.com                   */
+/*  Facebook :   http://www.facebook.com/prof.rakib  */
+/*  Github   :   http://github.com/serakib           */
+/*  Linkedin :   https://www.linkedin.com/in/serakib */
+/**=================================================**/
+/*---------------Compile from SCSS---------------*/
+/*
+Template Name:Photography
+*/
+/**===============Fonts =======================**/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+/**===============Reset & Commons=======================**/
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.tbl {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.tbl__cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.section__padding {
+  padding: 60px 0;
+}
+
+.section__title h1 {
+  padding: 15px 0;
+  font-size: 30px;
+  color: #444444;
+}
+.section__title p {
+  padding: 10px 0 45px 0;
+  font-size: 14px;
+  color: #666666;
+}
+
+ul li {
+  display: inline-block;
+}
+
+/**=================Buttons====================**/
+.instagram_btn {
+  background: transparent;
+  display: inline-block;
+  padding: 17px 40px;
+  text-transform: uppercase;
+  border: 1px solid #797979;
+  font-size: 14px;
+  color: #a6a6a6;
+  margin: 10px 0 40px 0;
+}
+.instagram_btn .fa {
+  margin-right: 5px;
+}
+
+/**===============Body====================**/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #000000;
+}
+header .main__menu .slogan {
+  display: inline-flex;
+}
+header .main__menu .slogan h3 {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  padding-left: 5px;
+}
+header .main__menu .navbar-toggle {
+  background: transparent;
+}
+header .main__menu .navbar-toggle .icon-bar {
+  background: #373737;
+}
+header .main__menu .navbar {
+  margin-bottom: 0;
+  min-height: 90px;
+}
+header .main__menu .navbar-nav > li > a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 34px 10px;
+  text-transform: uppercase;
+}
+header .main__menu .dropdown-menu li a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/*===========Slider Area==========*/
+.main__slider__area {
+  overflow: hidden;
+  background: #cccccc;
+}
+.main__slider__area .item-1 {
+  background: url(../../images/slider-1.jpg) no-repeat center;
+  background-size: cover;
+}
+.main__slider__area .item-2 {
+  background: url(../../images/slider-2.jpg) no-repeat center;
+  background-size: cover;
+}
+.main__slider__area .item-3 {
+  background: url(../../images/slider-3.jpg) no-repeat center;
+  background-size: cover;
+}
+.main__slider__area .slider .fa {
+  background: rgba(0, 0, 0, 0.2);
+  color: #b5adad;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px;
+  border: 1px solid #b5adad;
+  font-size: 30px;
+}
+.main__slider__area .slider .owl-nav .owl-prev, .main__slider__area .slider .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+}
+.main__slider__area .slider .owl-nav .owl-prev:hover .fa, .main__slider__area .slider .owl-nav .owl-next:hover .fa {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.main__slider__area .slider .owl-nav .owl-prev {
+  left: 5px;
+}
+.main__slider__area .slider .owl-nav .owl-next {
+  right: 5px;
+}
+.main__slider__area .slider .item {
+  height: 590px;
+}
+.main__slider__area .slider .item .slide__content h1 {
+  color: #fff;
+  padding: 5px 0;
+}
+.main__slider__area .slider .item .slide__content h1:first-child {
+  font-size: 50px;
+  font-weight: 700;
+}
+.main__slider__area .slider .item .slide__content h1:last-child {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/*===========Feature Area==========*/
+.services__area {
+  background: #f9f9f9;
+}
+.services__area .service__area__title {
+  padding: 30px 0;
+  font-size: 18px;
+  color: #444444;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.services__area .service {
+  padding: 15px;
+  margin-bottom: 30px;
+  background: #fff;
+}
+.services__area .service .service__body .service__content h4 {
+  padding: 15px 0;
+  margin-top: 10px;
+  font-size: 17px;
+  color: #444444;
+  font-weight: 700;
+}
+.services__area .service .service__body .service__content p {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: #666666;
+}
+
+/*===========Instagram==========*/
+.instagram {
+  background: #2c2c2c;
+  padding: 60px 0;
+}
+.instagram .instagram__area__title {
+  padding: 20px 0 25px 0;
+  font-size: 18px;
+  color: #d5d5d5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.instagram .instagram__post {
+  margin-bottom: 30px;
+  position: relative;
+}
+.instagram .instagram__post .instagram__hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.instagram .instagram__post .instagram__hover .hover__content {
+  font-size: 36px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.instagram .instagram__post:hover .instagram__hover {
+  display: block;
+}
+
+/*===========Journal Area==========*/
+.journal__area {
+  background: #f9f9f9;
+}
+.journal__area .journal {
+  background: #fff;
+  padding: 25px 0;
+  margin-bottom: 20px;
+}
+.journal__area .journal .journal__top {
+  padding: 10px 0;
+}
+.journal__area .journal .journal__top p {
+  font-size: 12px;
+  color: #999999;
+  padding-bottom: 15px;
+}
+.journal__area .journal .journal__top h4 {
+  font-size: 17px;
+  color: #444444;
+  padding: 10px 0;
+}
+.journal__area .journal .journal__bottom {
+  padding: 15px;
+}
+.journal__area .journal .journal__bottom p {
+  font-size: 14px;
+  color: #666666;
+}
+.journal__area .journal .journal__bottom a {
+  font-size: 11px;
+  color: #999999;
+  text-transform: uppercase;
+  border-bottom: 1px solid #999999;
+}
+
+/*===========About Area==========*/
+.about__area {
+  background: #f9f9f9;
+  padding-bottom: 80px;
+}
+.about__area .about__title {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.about__area .about__title h4 {
+  font-size: 18px;
+  color: #444444;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about__area .description .profile_photo {
+  margin-right: 25px;
+}
+.about__area .description .profile_content {
+  padding-right: 10px;
+}
+.about__area .description .profile_content p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+.about__area .services__container .service .media {
+  margin-bottom: 20px;
+}
+.about__area .services__container .service .media .media-object .fa {
+  font-size: 40px;
+  color: #28b8d8;
+}
+.about__area .services__container .service .media .media-body h4 {
+  font-size: 17px;
+  color: #444444;
+  font-weight: 700;
+}
+.about__area .services__container .service .media .media-body p {
+  font-size: 14px;
+  color: #666666;
+}
+
+/*===========Footer===========*/
+footer .footer__top {
+  padding: 45px 0;
+  background: #373737;
+}
+footer .footer__top .footer__link {
+  margin-bottom: 20px;
+}
+footer .footer__top .footer__link .media {
+  margin-top: 0;
+}
+footer .footer__top .footer__link .footer__link__title {
+  padding: 20px 0;
+  margin-top: 20px;
+}
+footer .footer__top .footer__link .footer__link__title h4 {
+  font-size: 16px;
+  color: #f0f0f0;
+  text-transform: uppercase;
+}
+footer .footer__top .footer__link .footer__links p {
+  color: #cacaca;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+footer .footer__top .footer__link .footer__links p .date {
+  font-size: 12px;
+  color: #929292;
+}
+footer .footer__top .footer__link .footer__links .fa {
+  color: #cacaca;
+  font-size: 14px;
+}
+footer .footer__top .footer__link .footer__links address .media-body p {
+  margin-bottom: 1px;
+}
+footer .footer__bottom {
+  padding: 15px 0;
+  background: #333333;
+}
+footer .footer__bottom p, footer .footer__bottom a {
+  color: #cacaca;
+}
+footer .footer__bottom .copyright {
+  padding: 10px 0;
+}
+footer .footer__bottom li {
+  padding: 0 10px;
+}
+footer .footer__bottom .frnt {
+  color: #986161;
+}
+footer .footer__bottom .bg {
+  color: transparent;
+  border: 1px solid #986161;
+  border-radius: 100%;
+}
+footer .footer__bottom a:hover .frnt {
+  color: #fff;
+}
+footer .footer__bottom a:hover .bg {
+  border-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
